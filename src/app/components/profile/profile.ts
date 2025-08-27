@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-profile',
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './profile.html',
   styleUrl: './profile.css'
 })
