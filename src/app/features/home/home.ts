@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {Content} from "../content/content";
-import {Footer} from "../footer/footer";
-import {Header} from "../header/header";
+import {Footer} from "../../layout/footer/footer";
+import {Header} from "../../layout/header/header";
 
 @Component({
   selector: 'app-home',
