@@ -29,6 +29,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
         run:
-          npm run ng -- ng deploy --repo=https://github.com/MartinoFCR/portfolio.git --name="MartinoFCR" --email="martin.calderon.ing@gmail.com" --base-href=/portfolio/
+          npm run ng -- deploy --repo=https://github.com/MartinoFCR/portfolio.git --name="MartinoFCR" --email="martin.calderon.ing@gmail.com" --base-href=/portfolio/
 
 
