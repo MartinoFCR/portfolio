@@ -6,6 +6,7 @@ import {Testimonials} from '../testimonials/testimonials';
 import {Education} from '../education/education';
 import {Articles} from '../articles/articles';
 import {Subscribe} from '../subscribe/subscribe';
+import {Skills} from '../skills/skills';
 
 @Component({
   selector: 'app-content',
@@ -16,7 +17,8 @@ import {Subscribe} from '../subscribe/subscribe';
     Testimonials,
     Education,
     Articles,
-    Subscribe
+    Subscribe,
+    Skills
   ],
   templateUrl: './content.html',
   styleUrl: './content.css'
