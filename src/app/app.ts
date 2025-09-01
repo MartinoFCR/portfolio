@@ -1,15 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { Router, Event, NavigationEnd } from '@angular/router';
-import {Header} from './components/header/header';
-import {Content} from './components/content/content';
-import {Footer} from './components/footer/footer';
+import {Router, Event, NavigationEnd, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
-    Header,
-    Content,
-    Footer
+    RouterOutlet
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
