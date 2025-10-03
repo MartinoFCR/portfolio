@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-experience',
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './experience.html',
   styleUrl: './experience.css'
 })

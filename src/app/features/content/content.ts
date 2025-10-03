@@ -14,7 +14,6 @@ import {Skills} from '../skills/skills';
     Profile,
     Experience,
     Projects,
-    Testimonials,
     Education,
     Articles,
     Subscribe,
