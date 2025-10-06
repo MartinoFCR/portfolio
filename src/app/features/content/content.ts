@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Profile} from '../profile/profile';
 import {Experience} from '../experience/experience';
 import {Projects} from '../projects/projects';
@@ -15,8 +15,6 @@ import {Skills} from '../skills/skills';
     Experience,
     Projects,
     Education,
-    Articles,
-    Subscribe,
     Skills
   ],
   templateUrl: './content.html',
