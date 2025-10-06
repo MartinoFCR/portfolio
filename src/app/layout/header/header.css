@@ -1,0 +1,4 @@
+nav ul li.active {
+  font-weight: bold;
+  color: #007BFF;
+}

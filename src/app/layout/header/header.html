@@ -5,7 +5,7 @@
     <div class="flex items-center">
       <!-- Logo -->
       <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
-         href="#" aria-label="Preline">
+         href="" aria-label="Preline">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
              class="lucide lucide-code-xml-icon lucide-code-xml">
@@ -22,11 +22,7 @@
     </div>
 
     <div class="flex items-center gap-1 md:order-4 md:ms-4">
-      <a
-        class="w-full sm:w-auto whitespace-nowrap py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
-        href="#subscribe">
-        Contacto
-      </a>
+
 
       <div class="md:hidden">
         <!-- Toggle Button -->
@@ -58,17 +54,17 @@
       <div
         class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
         <a
-          class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-gray-800 font-medium text-gray-800 hover:text-gray-800 focus:outline-hidden dark:border-neutral-200 dark:text-neutral-200 dark:hover:text-neutral-200"
-          href="#experience" aria-current="page">Experiencia</a>
+          class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
+          [class.active]="activeSection === 'experience'" href="#experience">Experiencia</a>
         <a
           class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
-          href="#projects">Proyectos</a>
+          [class.active]="activeSection === 'projects'" href="#projects">Proyectos</a>
         <a
           class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
-          href="#skills">Habilidades</a>
+          [class.active]="activeSection === 'skills'" href="#skills">Habilidades</a>
         <a
           class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
-          href="#education">Educación</a>
+          [class.active]="activeSection === 'education'" href="#education">Educación</a>
       </div>
     </div>
   </nav>
