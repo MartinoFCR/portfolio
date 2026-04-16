@@ -25,10 +25,8 @@ jobs:
         run: npm run build
 
       - name: Deploy to Github Pages
+        run: npx angular-cli-ghpages --dir=dist/portfolio-app
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-        run:
-          npm run ng -- deploy --repo=https://github.com/MartinoFCR/portfolio.git --name="MartinoFCR" --email="martin.calderon.ing@gmail.com" --base-href=/portfolio/
 
 

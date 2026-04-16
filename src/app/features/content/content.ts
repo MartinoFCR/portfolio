@@ -13,7 +13,6 @@ import {Skills} from '../skills/skills';
   imports: [
     Profile,
     Experience,
-    Projects,
     Education,
     Skills
   ],
