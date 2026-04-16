@@ -28,7 +28,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
       - name: Build
-        run: npm run build
+        run: npm run build -- --base-href=/portfolio/ --deploy-url=/portfolio/
 
       - name: Deploy to Github Pages
         run: |
