@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
@@ -31,8 +31,11 @@ jobs:
         run: npm run build
 
       - name: Deploy to Github Pages
-        run: npx angular-cli-ghpages --dir=dist/portfolio-app/browser --no-silent
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          npx angular-cli-ghpages \
+            --dir=dist/portfolio-app/browser \
+            --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/MartinoFCR/portfolio.git \
+            --branch=gh-pages \
+            --no-silent
 
 
