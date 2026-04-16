@@ -6,6 +6,8 @@ on:
       - main
 
   workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -25,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Github Pages
-        run: npx angular-cli-ghpages --dir=dist/portfolio-app/browser --no-silent --verbose
+        run: npx angular-cli-ghpages --dir=dist/portfolio-app/browser --no-silent
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
